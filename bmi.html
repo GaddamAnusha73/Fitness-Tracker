@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+ 
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    } 
+
+    h1 {
+      color: #4caf50;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .suggestions {
+      margin-top: 15px;
+      text-align: left;
+      background-color: #f0f9f0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>BMI Calculator</h1>
+
+    <input type="number" id="weight" placeholder="Enter your weight (kg)" required><br>
+    <input type="number" id="height" placeholder="Enter your height (cm)" required><br>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <div class="result" id="bmi-result"></div>
+    <div class="suggestions">
+      <p id="exercise"></p>
+      <p id="water"></p>
+    </div>
+  </div>
+  <script src="Bmi.js"></script>
+</body>
+</html>
